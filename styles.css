@@ -1,0 +1,84 @@
+
+/* Clean white background and centered layout */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 0; /* Allows scrolling if content overflows */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile-container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Circular, centered profile picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Professional, welcoming typography */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #111111;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 30px; /* Space before the heading */
+}
+
+/* Style the services header to stand out and have space */
+.services-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #111111;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Center the list block, but keep the text left-aligned inside it */
+.services-list {
+    list-style: none; /* Removes default dots */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 450px; /* Keeps the list neat and centered */
+    text-align: left; /* Align text left for clean bullet points */
+}
+
+/* Individual service list items */
+.services-list li {
+    position: relative;
+    padding-left: 24px;   /* Creates room for our custom dot */
+    margin-bottom: 12px;  /* Spacing between each service item */
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #444444;
+}
+
+/* Our custom, clean dots */
+.services-list li::before {
+    content: "•"; /* Using a clean bullet character */
+    position: absolute;
+    left: 0;
+    color: #111111; /* Matches the heading color */
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+    top: 1px; /* Vertically aligns the dot with the text */
+}
+    
